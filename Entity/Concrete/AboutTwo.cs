@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 
 namespace Entity.Concrete
 {
-    public class About
+    public class AboutTwo
     {
         [Key]
-        public int AboutId { get; set; }
+        public int AboutTwoId { get; set; }
         public string Title { get; set; }
-        public string Description { get; set; }
-        public string ImageOne { get; set; }
         public string TitleTwo { get; set; }
-        public string DescriptionTwo { get; set; }
+        public string Description { get; set; }
+        public string Image { get; set; }
         public bool Status { get; set; }
     }
 }
