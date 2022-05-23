@@ -36,9 +36,9 @@ namespace Business.Concrete
             throw new NotImplementedException();
         }
 
-        public IDataResult<List<About>> GetList()
+        public List<About> GetList()
         {
-            return new SuccessDataResult<List<About>>(_aboutDal.GetList());
+            return _aboutDal.GetList();
         }
 
         public IResult Update(About entity)
