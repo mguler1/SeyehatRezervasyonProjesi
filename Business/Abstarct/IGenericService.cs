@@ -13,6 +13,6 @@ namespace Business.Abstarct
         IResult Delete(T entity);
         IResult Update(T entity);
         List<T> GetList();
-        IDataResult<T> GetById(int id);
+        T GetById(int id);
     }
 }

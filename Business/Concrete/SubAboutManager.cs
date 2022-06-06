@@ -27,7 +27,7 @@ namespace Business.Concrete
             throw new NotImplementedException();
         }
 
-        public IDataResult<SubAbout> GetById(int id)
+        public SubAbout GetById(int id)
         {
             throw new NotImplementedException();
         }

@@ -17,6 +17,12 @@ namespace DataAccess.Repository
             context.SaveChanges();
         }
 
+        public T GetById(int id)
+        {
+            using var context = new Context();
+            return context.Set<T>().Find(id);
+        }
+
         public List<T> GetList()
         {
             using var context = new Context();

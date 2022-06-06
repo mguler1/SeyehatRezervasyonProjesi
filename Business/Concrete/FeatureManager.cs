@@ -30,7 +30,7 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
-        public IDataResult<Feature> GetById(int id)
+        public Feature GetById(int id)
         {
             throw new NotImplementedException();
         }

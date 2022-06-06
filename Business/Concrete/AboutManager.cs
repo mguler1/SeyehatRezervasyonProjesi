@@ -31,7 +31,7 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
-        public IDataResult<About> GetById(int id)
+        public About GetById(int id)
         {
             throw new NotImplementedException();
         }
@@ -46,5 +46,7 @@ namespace Business.Concrete
             _aboutDal.Update(entity);
             return new SuccessResult();
         }
+
+       
     }
 }

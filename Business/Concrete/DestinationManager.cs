@@ -30,9 +30,9 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
-        public IDataResult<Destination> GetById(int id)
+        public Destination GetById(int id)
         {
-            throw new NotImplementedException();
+            return  _destinationDal.GetById(id);
         }
 
         public List<Destination> GetList()
