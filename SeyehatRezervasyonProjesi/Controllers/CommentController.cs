@@ -14,13 +14,13 @@ namespace SeyehatRezervasyonProjesi.Controllers
         {
             return PartialView();
         }
-        [HttpGet]
-        public PartialViewResult AddComment(Comment comment)
+        [HttpPost]
+        public IActionResult AddComment(Comment comment)
         {
             comment.CommentDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
             comment.Commentstate =true;
             commentManager.Add(comment);
-            return PartialView();
+            return RedirectToAction("Index","Destination");
         }
     }
 }

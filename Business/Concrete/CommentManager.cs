@@ -1,5 +1,6 @@
 ﻿using Business.Abstarct;
 using Core.Result.Abstarct;
+using Core.Result.Concrete;
 using DataAccess.Abstract;
 using Entity.Concrete;
 using System;
@@ -19,7 +20,9 @@ namespace Business.Concrete
         }
         public IResult Add(Comment entity)
         {
-            throw new NotImplementedException();
+            _commentDal.Insert(entity);
+            return new SuccessResult();
+
         }
 
         public IResult Delete(Comment entity)
