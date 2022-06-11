@@ -16,6 +16,7 @@ namespace SeyehatRezervasyonProjesi.Controllers
         [HttpGet]
         public IActionResult DestinationDetail(int id)
         {
+            ViewBag.id=id;
             var values = destinationManager.GetById(id);
             return View(values);
         }

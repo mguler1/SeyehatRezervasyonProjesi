@@ -1,12 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Business.Concrete;
+using DataAccess.Ef;
+using Microsoft.AspNetCore.Mvc;
 
 namespace SeyehatRezervasyonProjesi.ViewComponents.Comment
 {
     public class CommentList:ViewComponent
     {
-        public IViewComponentResult Invoke()
+        CommentManager cm = new CommentManager(new EfCommentDal());
+        public IViewComponentResult Invoke(int id)
         {
-            return View();
+            var values = cm.GetDestinationById(id);    
+            return View(values);
         }
     }
 }
