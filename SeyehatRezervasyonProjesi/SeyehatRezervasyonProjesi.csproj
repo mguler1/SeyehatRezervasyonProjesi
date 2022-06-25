@@ -374,10 +374,10 @@
 
   <ItemGroup>
     <Folder Include="Areas\Member\Data\" />
-    <Folder Include="Areas\Member\Models\" />
     <Folder Include="wwwroot\dashboardTema\.git\objects\info\" />
     <Folder Include="wwwroot\dashboardTema\.git\objects\pack\" />
     <Folder Include="wwwroot\dashboardTema\.git\refs\tags\" />
+    <Folder Include="wwwroot\UserImages\" />
   </ItemGroup>
 
 </Project>
